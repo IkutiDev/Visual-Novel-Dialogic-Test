@@ -1,0 +1,54 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Normal",
+"description": "",
+"display_name": "Shounen",
+"mirror": false,
+"nicknames": ["Shou"],
+"offset": Vector2(10, 1),
+"portraits": {
+"Angry": {
+"image": "res://shounen/boy a_casual_angry.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Happy": {
+"image": "res://shounen/boy a_casual_happy.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Nervous": {
+"image": "res://shounen/boy a_casual_nervous.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Normal": {
+"image": "res://shounen/boy a_casual_normal.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Sad": {
+"image": "res://shounen/boy a_casual_sad.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 0.67
+}

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dly423n4na0ak"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_3tek6"]
+[ext_resource type="Resource" path="res://timelines/intro_timeline.dtl" id="2_volf5"]
+
+[node name="Game" type="Control" node_paths=PackedStringArray("pause_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3tek6")
+pause_label = NodePath("PauseCanvasLayer/PauseLabel")
+start_timeline = ExtResource("2_volf5")
+
+[node name="PauseCanvasLayer" type="CanvasLayer" parent="."]
+layer = 99
+
+[node name="PauseLabel" type="Label" parent="PauseCanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1

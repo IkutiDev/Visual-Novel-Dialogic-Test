@@ -1,0 +1,36 @@
+[background arg="res://backgrounds/Void.png" fade="0.0"]
+[text_input text="Please enter your name:" var="Player.Name" placeholder="Name"]
+[text_input text="And your pronouns:" var="Player.Pronouns" placeholder="they/them"]
+[call_node single_use="true"]
+[background arg="res://backgrounds/Modern-Street1.png" fade="0.0"]
+Todays weather is great so you decide to go out for a stroll
+It's a wekeend after all, always great to spend some of it outside!
+Suddenly you realize some person is coming up to you
+Join ella 0
+It's Ella, your good friend!
+ella (Happy): Hi {Player.Name}  !
+ella (Happy): How's it going?
+- It's great!
+	ella: That's good to hear! Now it's gonna be evene better, since look who is coming!
+	ella: It's Shounen!
+- It's fine
+	ella: Hopefully it's gonna be more than fine once you know who is joining us!
+	ella: It's Shounen!
+- Could be better
+	ella (Sad): Oh no!
+	ella (Happy): Hopefully Shounen can cheer you up. Shounen come over here!
+Join shounen 4
+shounen (Happy): Sup {Player.Name}
+Darn, Shounen is so cool!
+shounen (Happy): Wanna go for a walk anywhere?
+- Sure!
+	ella: Great! I know just the place. Let's go to the park!
+	shounen: Sounds awesome. Let's go!
+	[jump timeline="park_timeline"]
+- Nah, thanks though
+	ella: Oh well. Hopefully we gonna go out next time!
+	shounen: Yeah! See you around {Player.Name}
+	Sometimes there are such days when one just want to go back to their own bedroom and chill
+	Nothing wrong with that
+	Leave --All--
+	[jump timeline="bedroom_one_timeline"]
